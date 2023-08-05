@@ -1,0 +1,145 @@
+@font-face {
+  font-family: "Cinzel";
+  src: url(/fonts/Cinzel-Regular/cinzel/Cinzel-Bold.ttf);
+}
+@font-face {
+  font-family: "Cinzel-II";
+  src: url(/fonts/Cinzel-Regular/cinzel/Cinzel-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: auto;
+  scrollbar-color: #191919 #ffffff;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.collection-I {
+  width: 100%;
+  /* background-color: red; */
+}
+.collections {
+
+  padding: 30px;
+}
+
+.collection-container {
+  width: 100%;
+}
+
+.jewelry-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vw;
+}
+
+.jewelry-card {
+
+  width: 720px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.jewelry-card img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+.names>h3{
+  font-family: "Cinzel";
+}
+.names>p{
+  font-family: "Cinzel-II";
+  font-weight: 700;
+}
+.names {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.purchase {
+  padding: 1vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.jewelry-card button {
+  padding: 10px 20px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  /* border: .9px solid #191919; */
+  border-radius: 50px;
+  font-family: "Cinzel";
+  cursor: pointer;
+
+}
+
+.collection-II {
+  height: 20vh;
+  
+}
+.bt {
+  width: 100%;
+  padding: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* background-color: red; */
+}
+.bt > button {
+  padding: 12px 22px;
+  background-color: #191919;  
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  font-family: "Cinzel-II";
+}
+@media screen and (max-width: 768px) {
+  .collections {
+    padding: 10px;
+  }
+  .jewelry-card {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+  }
+  .jewelry-card button {
+    padding: 4px 20px;
+    background-color: #191919;  
+    color: #fff;
+    /* border: .9px solid #191919; */
+    border: none;
+    border-radius: 50px;
+    font-family: "Cinzel";
+    cursor: pointer;
+    font-size: 12px;
+   
+  }
+ 
+  .names{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .collection-II {
+    
+    padding: 6vw;
+    
+  }
+
+}

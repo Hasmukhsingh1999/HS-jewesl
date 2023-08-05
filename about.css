@@ -1,0 +1,297 @@
+@font-face {
+  font-family: "Cinzel";
+  src: url(/fonts/Cinzel-Regular/cinzel/Cinzel-Bold.ttf);
+}
+@font-face {
+  font-family: "Cinzel-II";
+  src: url(/fonts/Cinzel-Regular/cinzel/Cinzel-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: auto;
+  scrollbar-color: #191919 #ffffff;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #393939;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
+main {
+  padding: 20px;
+}
+
+.about-us {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.brand-name {
+  font-weight: bold;
+  color: #ff5733; /* Your brand's primary color */
+}
+
+.signature {
+  font-style: italic;
+}
+
+.text-content {
+  line-height: 0.99;
+}
+
+.scrollers {
+  position: absolute;
+  bottom: 0;
+  top: 85%;
+}
+
+.scrollers > span {
+  font-size: 12px;
+  display: inline-block;
+  animation: scroll 2s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+.about-us-I {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1vw;
+  /* background-color: yellow; */
+}
+.about-us-I > h4 {
+  text-align: center;
+  font-family: "Cinzel";
+  font-size: 2.5vw;
+}
+.about-us-I > p {
+  width: 85vw;
+  text-align: center;
+  font-size: 1.7vw;
+  font-family: "Cinzel-II";
+  color: black;
+}
+@keyframes scroll {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(-10px);
+  }
+  40%,
+  100% {
+    transform: translateY(0px);
+  }
+}
+.about-us-II {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-co {
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+}
+.video-co > video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-us-III {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  align-items: center;
+  justify-content: center;
+  /* background-color: yellowgreen; */
+}
+.about-us-III > h4 {
+  font-family: "Cinzel";
+  font-size: 3.5vw;
+}
+.about-us-III > p {
+  font-family: "Cinzel-II";
+  font-size: 1.5vw;
+  font-weight: 700;
+  color: black;
+  width: 80vw;
+  text-align: center;
+}
+.about-us-IV {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3vw;
+}
+.over-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+  flex-wrap: wrap;
+}
+.images {
+  width: 700px;
+  border-radius: 40px;
+  overflow: hidden;
+  position: relative;
+}
+.bio {
+  position: absolute;
+  bottom: 0;
+  padding: 1vw 4vw;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.bio > p {
+  color: white;
+  font-weight: 600;
+  padding: 12px 22px;
+  border: .4px solid rgba(255, 255, 255, 0.692);
+  border-radius: 40px;
+  font-family: "Cinzel-II";
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.bio > p::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  background-color:#f2f1e7;
+  top: 0%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  transition: all 0.4s ease-in-out;
+}
+.bio > p:hover::after {
+  height: 100%;
+}
+.images > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-us-v {
+  width: 100%;
+  height: 50vh;
+}
+.sp {
+  height: 10vh;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .scrollers > span {
+    font-size: 9px;
+  }
+  .about-us-I {
+    height: 40vh;
+    gap: 2vw;
+  }
+  .about-us-I > h4 {
+    text-align: center;
+    font-family: "Cinzel";
+    font-size: 5vw;
+  }
+  .about-us-I > p {
+    width: 85vw;
+    text-align: center;
+    font-size: 3.5vw;
+    font-weight: 700;
+    font-family: "Cinzel-II";
+  }
+  .video-co {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    /* padding: 2vw; */
+  }
+  .about-us-II {
+    height: 60vh;
+  }
+  .about-us-III {
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+  }
+  .about-us-III > h4 {
+    font-size: 6vw;
+    /* height: 30vh; */
+  }
+  .about-us-III > p {
+    font-size: 3.5vw;
+  }
+  .images {
+    border-radius: 20px;
+  }
+  .bio > p {
+    padding: 10px 20px;
+
+    font-size: 12px;
+  }
+  .about-us-v{
+    padding: 0 5vw;
+  }
+}
+
